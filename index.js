@@ -3,13 +3,13 @@ import { ContactObserver } from "./contactObserver.js";
 
 const telephone = new Telephone()
 
-const contact1 = new ContactObserver("07062726898")
-const contact2 = new ContactObserver("09029310736")
+const user1 = new ContactObserver("2347023232")
+const user2 = new ContactObserver("09029310736")
 
 //adding observers
-telephone.addPhoneNumber(contact1)
-telephone.addPhoneNumber(contact2)
+telephone.addPhoneNumber(user1)
+telephone.addPhoneNumber(user2)
 
 
-//dialing a contact2 phoneNumber
-telephone.dialPhoneNumber(contact2)
+//dialing a user1 phone number, other observers added will get update on the phone number be dialled.
+telephone.dialPhoneNumber(user1)
